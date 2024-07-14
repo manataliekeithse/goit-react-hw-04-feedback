@@ -10,16 +10,13 @@ export const App = () => {
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
 
-  // Calculate total feedback
   const countTotalFeedback = () => good + neutral + bad;
 
-  // Calculate positive feedback percentage
   const countPositiveFeedbackPercentage = () => {
     const total = countTotalFeedback();
     return total > 0 ? Math.round((good / total) * 100) : 0;
   };
 
-  // Handle click event
   const handleClick = type => {
     switch (type) {
       case 'good':
@@ -36,10 +33,8 @@ export const App = () => {
     }
   };
 
-  // Optionally, use useEffect to perform side effects
   useEffect(() => {
     console.log('Feedback updated');
-    // This will run after every render
   }, [good, neutral, bad]);
 
   const total = countTotalFeedback();

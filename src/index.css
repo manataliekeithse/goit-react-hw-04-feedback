@@ -16,7 +16,6 @@ code {
     monospace;
 }
 
-/* START OF RESET CSS */
 h1,
 h2,
 h3,
@@ -40,11 +39,9 @@ img {
   height: auto;
 }
 
-/* END OF RESET CSS */
-
 div {
   margin: 50px auto;
-  /* padding: 0 auto; */
+
   width: 400px;
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
